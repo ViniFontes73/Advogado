@@ -8,6 +8,12 @@ body {
 .section-padding {
 	padding: 100px 0;
 }
+.navbar-brand img {
+  width: 50%;
+  height: auto; /* Mantém a proporção original da imagem */
+}
+
+
 .carousel-item {
 	height: 100vh;
 	min-height: 300px;
