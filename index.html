@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helian Advocacia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+
+<body>
+  <header>
+    <!-- place navbar here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <div>
+              <a class="navbar-brand" href="index.html">
+                <img src="Imagens/2.png" alt="INICIO">
+              </a>
+              
+            </div>
+            <div>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#inicio">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sobre">SOBRE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#serviços">SERVIÇOS</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#contato">CONTATO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#institucional">INSTITUCIONAL</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Imagens/wall.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption">
+                <h5>Advocacia Especializada</h5>
+                <p>QUALIDADE, ÉTICA E ATENDIMENTO PERSONALIZADO.</p>
+                <p><a href="#" class="btn btn-entrar-em-contato mt-3"style="color: #ffffff;">ENTRAR EM CONTATO </a></p>
+              </div>
+            </div>
+            
+           
+          </div>
+        </div>
+      </section>
+      
+  </header>
+  <main>
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script>
+    // Selecione a barra de navegação
+    const navbar = document.querySelector('.navbar');
+
+    // Função para atualizar o fundo da barra de navegação com a imagem ativa do carrossel
+    function updateNavbarBackground() {
+        const activeSlide = document.querySelector('.carousel-item.active');
+        const imageUrl = activeSlide.querySelector('img').src;
+
+        // Aplica a imagem como fundo da barra de navegação
+        navbar.style.backgroundImage = `url('${imageUrl}')`;
+    }
+
+    // Atualize o fundo da barra de navegação quando a página for carregada inicialmente
+    window.addEventListener('load', updateNavbarBackground);
+
+    // Atualize o fundo da barra de navegação quando o carrossel muda de slide
+    document.querySelector('#carouselExampleSlidesOnly').addEventListener('slid.bs.carousel', updateNavbarBackground);
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

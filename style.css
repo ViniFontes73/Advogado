@@ -1,0 +1,72 @@
+body{
+  background: #f1fbff;
+}
+.navbar-brand img {
+    max-width: 45%; /* A imagem não excederá a largura do contêiner pai */
+    height: auto;    /* A altura será ajustada automaticamente para manter a proporção */
+}
+
+  .navbar-nav .nav-link {
+    color: #c9a476; /* Define a cor do texto como branco */
+    /* Outros estilos para o texto, como tamanho da fonte, podem ser adicionados aqui */
+    font-weight: 600;
+    font-size: 1.32em;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #814f16; /* Cor do texto ao passar o mouse (branco, por exemplo) */
+    /* Outros estilos de hover, como fundo ou efeitos de transição, podem ser adicionados aqui */
+  }
+  .navbar {
+    background-image: none; /* Certifique-se de que inicialmente não haja imagem de fundo */
+    background-color: transparent; /* Defina um fundo transparente inicial */
+    transition: background 0.5s ease-in-out; /* Adicione uma transição suave de 0,5 segundos para mudanças de fundo */
+    
+}
+.navbar-toggler-icon {
+  border: 2px solid #c57315; /* Define uma borda personalizada, se desejar */
+  padding: 5px; /* Ajusta o espaço ao redor do ícone */
+  color: rgb(255, 255, 255); /* Define a cor do ícone (a cor das barras) */
+
+}
+.navbar-toggler-icon:hover{
+  background-color: #814f16;
+}
+.btn-entrar-em-contato {
+  background-image: linear-gradient(to top, #2a09a1, #020101);
+  color: #fdfdfd;
+  font-weight: 600;
+  
+}
+
+
+.section.padding {
+  padding: 100px 0;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%; /* Ajuste a posição vertical conforme necessário */
+  left: 50%; /* Ajuste a posição horizontal conforme necessário */
+  transform: translate(-50%, -50%); /* Centralize vertical e horizontalmente */
+  text-align: center; /* Centralize o texto horizontalmente */
+  width: 100%; /* Garante que o texto ocupe toda a largura do slide */
+  z-index: 2;
+
+}
+
+.carousel-caption h5{
+  font-size: 50px;
+  letter-spacing: 2px;
+  margin-top: 5%;
+  margin-left: 60%;
+  font-weight: 700;
+  color: #c9a476;
+}
+.carousel-caption p{
+  width: 60%;
+  margin: auto;
+  font-size: 64PX;
+  line-height: 1.9;
+  margin-left: 50%;
+  font-weight: 700;
+color: #c9a476;
+}
