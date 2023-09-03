@@ -23,16 +23,21 @@ body {
 	z-index: 2;
 }
 .carousel-caption h5 {
-	font-size: 45px;
+	font-size: 30px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin-top: 25px;
+  font-weight: 700;
+  color: #c9a476;
+
 }
 .carousel-caption p {
 	width: 60%;
 	margin: auto;
-	font-size: 18px;
+	font-size: 48px;
 	line-height: 1.9;
+  font-weight: 700;
+  color: #c9a476;
 }
 .carousel-inner:before {
 	content: '';
@@ -44,12 +49,14 @@ body {
 	background: rgba(0, 0, 0, 0.7);
 	z-index: 1;
 }
+
+/*     ------------------------------------------                  NAVBAR       ------------------------                 */
 .navbar .getstarted {
-	background: #106eea;
+	background: #000000;
 	margin-left: 30px;
 	border-radius: 4px;
 	font-weight: 400;
-	color: #fff;
+	color: #ffffff;
 	text-decoration: none;
 	padding: .5rem 1rem;
 	line-height: 2.3;
@@ -60,20 +67,20 @@ body {
 	font-weight: 500;
 }
 .navbar-light .navbar-brand {
-	color: #000;
+	color: #000000;
 	font-size: 25px;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 2px;
 }
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
-	color: #000;
+	color: #775122;
 }
 .navbar-light .navbar-nav .nav-link {
-	color: #000;
+	color: #775122;
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-	color: #000;
+	color: #775122;
 }
 .w-100 {
 	height: 100vh;
@@ -84,16 +91,17 @@ body {
 	line-height: 0.3;
 	background: #fff;
 }
-.portfolio .card {
+/* ------------------------------ ---------------------------*/
+.sobre .card {
 	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
 }
-.team .card {
+.contato .card {
 	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
 }
-.services .card-body i {
+.serviços .card-body i {
 	font-size: 50px;
 }
-.team .card-body i {
+.institucional .card-body i {
 	font-size: 20px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -129,10 +137,87 @@ body {
 		line-height: 1.6;
 		font-size: 12px;
 	}
-	.about-text {
+	.sobre-text {
 		padding-top: 50px;
 	}
 	.card {
 		margin-bottom: 30px;
 	}
+}
+.fixed-div{
+  position: fixed;
+  top: 85%;
+  z-index: 99;
+  right: 2%;
+}
+.elemento {
+  position: relative; /* Adicione esta propriedade para que o tooltip seja posicionado em relação a este elemento */
+}
+
+.elemento:hover::after {
+  content: attr(title);
+  background-color: #295830;
+  color: white;
+  border-radius: 4px;
+  position: absolute;
+  white-space: nowrap;
+  padding: 5px;
+
+  /* Posicione o tooltip acima do elemento se não houver espaço suficiente abaixo */
+  bottom: 100%; /* Exibe acima */
+  left: 50%;
+  transform: translateX(-50%);
+
+  /*Adicione uma seta apontando para o elemento */
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #295830 transparent;
+}
+/* CREDITOS*/
+.custom-footer {
+        background-color: #000000; 
+        color: #795122;
+    }
+/*INSTITUCIONAL*/
+.section-com-listas {
+  position: relative;
+}
+
+.listas-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: #ffffff; /* Cor do texto nas listas */
+  position: relative; /* Adicionado */
+}
+
+.listas-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Imagens/508827.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(.5);
+  z-index: -1; /* Coloca o pseudoelemento atrás das listas */
+}
+
+.lista1, .lista2, .lista3 {
+  align-self: center; /* Alinha verticalmente no centro */
+}
+
+.lista1 ul, .lista2 ul, .lista3 ul {
+  list-style-type: none;
+  font-weight: 600;
+}
+
+.faleinstenc{
+  font-weight: 600;
+}
+.Encontrar{
+text-decoration: none;
+color: #ffffff;
 }
