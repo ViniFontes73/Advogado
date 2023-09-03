@@ -1,74 +1,305 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Helian Advocacia</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">    <!--Para todas versões internet explorer-->
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Helian Advocacia</title>
+	<!-- hrefs -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html"><span class="text-warning">Build</span>Con</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="#inicio">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#sobre">Sobre</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#serviços">Serviços</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="#contato">Contato</a>
+					</li>
+          <li class="nav-item">
+						<a class="nav-link" href="#institucional">Institucional</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+		<div class="carousel-indicators">
+			<button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
+		</div>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img alt="..." class="d-block w-100" src="Imagens/wall.jpg">
+				<div class="carousel-caption">
+					<h5>Advocacia Especializada</h5>
+					<p>QUALIDADE, ÉTICA E ATENDIMENTO PERSONALIZADO.</p>
+					<p><a class="btn btn-warning mt-3" href="#">ENTRAT EM CONTATO</a></p>
+				</div>
+			</div>
+			<!--<div class="carousel-item">
+				<img alt="..." class="d-block w-100" src="img/home-2.jpg">
+				<div class="carousel-caption">
+					<h5>Always Dedicated</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
+					<p><a class="btn btn-warning mt-3" href="#">Learn More</a></p>
+				</div>
+			</div>           -->
+			<!--<div class="carousel-item">
+				<img alt="..." class="d-block w-100" src="img/home-3.jpg">
+				<div class="carousel-caption">
+					<h5>True Construction</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, nulla, tempore. Deserunt excepturi quas vero.</p>
+					<p><a class="btn btn-warning mt-3" href="#">Learn More</a></p>
+				</div>
+			</div>    -->
+		</div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
+	</div>                                <!-- ONDE SOBRE COMEÇA -->
+	<section class="about section-padding" id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-12 col-12">
+					<div class="about-img"><img alt="" class="img-fluid" src="img/about.jpg"></div>
+				</div>
+				<div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+					<div class="about-text">
+						<h2>We Provide the Best Quality<br>
+						Services Ever</h2>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, labore reiciendis. Assumenda eos quod animi! Soluta nesciunt inventore dolores excepturi provident, culpa beatae tempora, explicabo corporis quibusdam corrupti. Autem, quaerat. Assumenda quo aliquam vel, nostrum explicabo ipsum dolor, ipsa perferendis porro doloribus obcaecati placeat natus iste odio est non earum?</p><a class="btn btn-warning" href="#">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- about section Ends -->
+	<!-- services section Starts -->
+	<section class="services section-padding" id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header text-center pb-5">
+						<h2>Our Services</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur<br>
+						adipisicing elit. Non, quo.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-12 col-lg-4">
+					<div class="card text-white text-center bg-dark pb-2">
+						<div class="card-body">
+							<i class="bi bi-laptop"></i>
+							<h3 class="card-title">Best Quality</h3>
+							<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p><button class="btn bg-warning text-dark">Read More</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-4">
+					<div class="card text-white text-center bg-dark pb-2">
+						<div class="card-body">
+							<i class="bi bi-journal"></i>
+							<h3 class="card-title">Sustainability</h3>
+							<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p><button class="btn bg-warning text-dark">Read More</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-4">
+					<div class="card text-white text-center bg-dark pb-2">
+						<div class="card-body">
+							<i class="bi bi-intersect"></i>
+							<h3 class="card-title">Integrity</h3>
+							<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p><button class="btn bg-warning text-dark">Read More</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- services section Ends -->
+	<!-- portfolio strats -->
+	<section class="portfolio section-padding" id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header text-center pb-5">
+						<h2>Our Projects</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur<br>
+						adipisicing elit. Non, quo.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-12 col-lg-4">
+					<div class="card text-light text-center bg-white pb-2">
+						<div class="card-body text-dark">
+							<div class="img-area mb-4"><img alt="" class="img-fluid" src="img/project-1.jpg"></div>
+							<h3 class="card-title">Building Make</h3>
+							<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p><button class="btn bg-warning text-dark">Learn More</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-4">
+					<div class="card text-light text-center bg-white pb-2">
+						<div class="card-body text-dark">
+							<div class="img-area mb-4"><img alt="" class="img-fluid" src="img/project-2.jpg"></div>
+							<h3 class="card-title">Building Make</h3>
+							<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p><button class="btn bg-warning text-dark">learn More</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-12 col-lg-4">
+					<div class="card text-light text-center bg-white pb-2">
+						<div class="card-body text-dark">
+							<div class="img-area mb-4"><img alt="" class="img-fluid" src="img/project-3.jpg"></div>
+							<h3 class="card-title">Building Make</h3>
+							<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eligendi modi temporibus alias iste. Accusantium?</p><button class="btn bg-warning text-dark">Learn More</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- portfolio ends -->
+	<!-- team starts -->
+	<section class="team section-padding" id="team">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header text-center pb-5">
+						<h2>Our Team</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur<br>
+						adipisicing elit. Non, quo.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card text-center">
+						<div class="card-body">
+							<img alt="" class="img-fluid rounded-circle" src="img/team-1.jpg">
+							<h3 class="card-title py-2">Jack Wilson</h3>
+							<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
+							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card text-center">
+						<div class="card-body">
+							<img alt="" class="img-fluid rounded-circle" src="img/team-2.jpg">
+							<h3 class="card-title py-2">Jack Wilson</h3>
+							<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
+							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card text-center">
+						<div class="card-body">
+							<img alt="" class="img-fluid rounded-circle" src="img/team-3.jpg">
+							<h3 class="card-title py-2">Jack Wilson</h3>
+							<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
+							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="card text-center">
+						<div class="card-body">
+							<img alt="" class="img-fluid rounded-circle" src="img/team-4.jpg">
+							<h3 class="card-title py-2">Jack Wilson</h3>
+							<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo tempora esse quibusdam.</p>
+							<p class="socials"><i class="bi bi-twitter text-dark mx-1"></i> <i class="bi bi-facebook text-dark mx-1"></i> <i class="bi bi-linkedin text-dark mx-1"></i> <i class="bi bi-instagram text-dark mx-1"></i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- team ends -->
+	<!-- Contact starts -->
+	<section class="contact section-padding" id="contact">
+		<div class="container mt-5 mb-5">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-header text-center pb-5">
+						<h2>Contact Us</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur<br>
+						adipisicing elit. Non, quo.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row m-0">
+				<div class="col-md-12 p-0 pt-4 pb-4">
+					<!--for getting the form download the code from download button-->
+				</div>
+			</div>
+		</div>
+	</section><!-- contact ends -->
+	<!-- footer starts -->
+	<footer class="bg-dark p-2 text-center">
+		<div class="container">
+			<p class="text-white">All Right Reserved By @website Name</p>
+		</div>
+	</footer>
+	<!-- footer ends -->
+	
+	<!-- All Js -->
+	<script src="js/bootstrap.bundle.min.js"></script> 
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
 
 <body>
   <header>
     <!-- place navbar here -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <div>
-              <a class="navbar-brand" href="index.html">
-                <img src="Imagens/2.png" alt="INICIO">
-              </a>
-              
-            </div>
-            <div>
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#inicio">INICIO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#sobre">SOBRE</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#serviços">SERVIÇOS</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#contato">CONTATO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#institucional">INSTITUCIONAL</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <section>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Imagens/wall.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption">
-                <h5>Advocacia Especializada</h5>
-                <p>QUALIDADE, ÉTICA E ATENDIMENTO PERSONALIZADO.</p>
-                <p><a href="#" class="btn btn-entrar-em-contato mt-3"style="color: #ffffff;">ENTRAR EM CONTATO </a></p>
-              </div>
-            </div>
-            
-           
-          </div>
-        </div>
-      </section>
-      
   </header>
   <main>
 
@@ -77,25 +308,6 @@
     <!-- place footer here -->
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
-  <script>
-    // Selecione a barra de navegação
-    const navbar = document.querySelector('.navbar');
-
-    // Função para atualizar o fundo da barra de navegação com a imagem ativa do carrossel
-    function updateNavbarBackground() {
-        const activeSlide = document.querySelector('.carousel-item.active');
-        const imageUrl = activeSlide.querySelector('img').src;
-
-        // Aplica a imagem como fundo da barra de navegação
-        navbar.style.backgroundImage = `url('${imageUrl}')`;
-    }
-
-    // Atualize o fundo da barra de navegação quando a página for carregada inicialmente
-    window.addEventListener('load', updateNavbarBackground);
-
-    // Atualize o fundo da barra de navegação quando o carrossel muda de slide
-    document.querySelector('#carouselExampleSlidesOnly').addEventListener('slid.bs.carousel', updateNavbarBackground);
-</script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
   </script>
